@@ -44,13 +44,33 @@ h1 {
 /* otherwise we will have problems */
 
 
-/* Desktop & Laptop */
+/* Desktop & Laptop 1024px */
+
+@media (min-width: 1024px) {
+    .text-section {
+        color: blueviolet;
+        background-color: bisque;
+    }
+    body {
+        background-color: chocolate;
+    }
+}
 
 
-/* Tablets & ipads */
+/* Tablets & ipads * 768px to 1023px/
+/* applying both min and max */
+
+@media (min-width: 769px) and (max-width: 1023px) {
+    body {
+        background-color: aqua;
+    }
+    .text-section {
+        text-transform: uppercase;
+    }
+}
 
 
-/* Moblie & Smart Phones 0 to 768px */
+/* Moblie & Smart Phones 768px */
 
 @media (max-width: 768px) {
     h1 {
@@ -68,10 +88,25 @@ h1 {
     .image-section img {
         width: 100%;
         height: auto;
+        padding: 10px;
+    }
+    body {
+        background-color: brown;
     }
 }
 
 
-/* Moblie & Smart Phones 0 to 468px */
+/* Moblie & Smart Phones 468px */
 
-@media (max-width: 468px) {}
+@media (max-width: 468px) {
+    .image-section img {
+        padding: 15px
+    }
+    h1 {
+        color: orange;
+        font-size: 20px;
+    }
+    body {
+        background-color: blue;
+    }
+}
