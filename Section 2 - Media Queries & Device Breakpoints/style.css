@@ -59,7 +59,19 @@ h1 {
     .container {
         display: block;
     }
+    .text-section {
+        width: 100%;
+    }
+    .image-section {
+        width: 100%;
+    }
+    .image-section img {
+        width: 100%;
+        height: auto;
+    }
 }
 
 
 /* Moblie & Smart Phones 0 to 468px */
+
+@media (max-width: 468px) {}
